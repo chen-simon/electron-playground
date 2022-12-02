@@ -1,5 +1,6 @@
 # ⚛ My first electron app!
-Hi, Simon here! This is my first electron app just playing around
+Hi, I'm Simon! This is my first electron app to learn how electron works!
+It uses React and react-router-dom
 
 # 🛠 Setup
 Install node packages:
@@ -18,24 +19,19 @@ npm run electron-dev
 ```
 
 # 🏠 Build
-Build the react app
+Build the react app with:
 ```
 npm build
 ```
 
 # 📦 Packaging for Desktop
 After building, run the following command to package for your system:
-##### Windows:
 ```
-electron-builder -w -c.extraMetadata.main=build/electron.js
+electron-builder
 ```
-To package for linux or mac, substitute `-w` with `-m` (MacOS) or `-l` (Linux):
+To package for linux or mac, add a `-w` (Windows), `-m` (MacOS), or `-l` (Linux) flag, for example:
 ##### MacOS:
 ```
-electron-builder -m -c.extraMetadata.main=build/electron.js
+electron-builder -m
 ```
-##### Linux:
-```
-electron-builder -l -c.extraMetadata.main=build/electron.js
-```
-Then, the ready-to-distribute installer should be in the `./dist/` folder!!
+Then, the ready-to-distribute app installer should be in the `./dist/` folder!! 🎉
