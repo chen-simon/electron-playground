@@ -2,13 +2,13 @@
 Hi, I'm Simon! This is my first electron app to learn how electron works!
 It uses React and react-router-dom
 
-# 🛠 Setup
+## 🛠 Setup
 Install node packages:
 ```
 npm install
 ```
 
-# 🚗 Run
+## 🚗 Run
 Start dev server:
 ```
 npm start
@@ -18,13 +18,13 @@ Then, host with electron app in separate terminal:
 npm run electron-dev
 ```
 
-# 🏠 Build
+## 🏠 Build
 Build the react app with:
 ```
 npm build
 ```
 
-# 📦 Packaging for Desktop
+## 📦 Packaging for Desktop
 After building, run the following command to package for your system:
 ```
 electron-builder
