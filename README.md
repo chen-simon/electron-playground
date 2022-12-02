@@ -25,16 +25,17 @@ npm build
 
 # 📦 Packaging for Desktop
 After building, run the following command to package for your system:
-#### Windows:
+##### Windows:
 ```
 electron-builder -w -c.extraMetadata.main=build/electron.js
 ```
 To package for linux or mac, substitute `-w` with `-m` (MacOS) or `-l` (Linux):
-#### MacOS:
+##### MacOS:
 ```
 electron-builder -m -c.extraMetadata.main=build/electron.js
 ```
-#### Linux:
+##### Linux:
 ```
 electron-builder -l -c.extraMetadata.main=build/electron.js
 ```
+Then, the ready-to-distribute installer should be in the `./dist/` folder!!
