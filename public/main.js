@@ -1,8 +1,10 @@
 const { app, BrowserWindow } = require('electron')
+const path = require('path');
+const url = require('url');
 
 function createWindow () {
   // Create the browser window.
-  const win = new BrowserWindow({
+  const mainWindow = new BrowserWindow({
     frame: false,
     autoHideMenuBar: true,
     width: 800,
@@ -12,11 +14,19 @@ function createWindow () {
     }
   })
 
-  //load the index.html from a url
-  win.loadURL('http://localhost:3000');
+  const appURL = app.isPackaged
+    ? url.format({
+        pathname: path.join(__dirname, "index.html"),
+        protocol: "file:",
+        slashes: true,
+      })
+    : "http://localhost:3000";
+  mainWindow.loadURL(appURL);
 
   // Open the DevTools.
-  win.webContents.openDevTools()
+  if (!app.isPackaged) {
+    mainWindow.webContents.openDevTools();
+  }
 }
 
 // This method will be called when Electron has finished
