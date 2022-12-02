@@ -5,7 +5,7 @@ const url = require('url');
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    frame: false,
+    // frame: false,
     autoHideMenuBar: true,
     width: 800,
     height: 600,

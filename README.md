@@ -23,9 +23,9 @@ Build the react app
 npm build
 ```
 
-# 📦 Packaging for App
-Run to build for windows:
+# 📦 Packaging for Desktop
+After building, run to package for windows:
 ```
 electron-builder -w -c.extraMetadata.main=build/main.js
 ```
-To build for linux or mac, substitute `-w` with `-m` (MacOS) or `-l` (Linux)
+To package for linux or mac, substitute `-w` with `-m` (MacOS) or `-l` (Linux)
