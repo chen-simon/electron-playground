@@ -5,7 +5,7 @@
   "author": "Simon Chen",
   "description": "My fantastic Electron app!!",
   "homepage": "./",
-  "main": "public/main.js",
+  "main": "public/electron.js",
   "build": {
     "appId": "com.electron.myapp",
     "productName": "My Electron App",

@@ -24,8 +24,17 @@ npm build
 ```
 
 # 📦 Packaging for Desktop
-After building, run to package for windows:
+After building, run the following command to package for your system:
+#### Windows:
 ```
-electron-builder -w -c.extraMetadata.main=build/main.js
+electron-builder -w -c.extraMetadata.main=build/electron.js
 ```
-To package for linux or mac, substitute `-w` with `-m` (MacOS) or `-l` (Linux)
+To package for linux or mac, substitute `-w` with `-m` (MacOS) or `-l` (Linux):
+#### MacOS:
+```
+electron-builder -m -c.extraMetadata.main=build/electron.js
+```
+#### Linux:
+```
+electron-builder -l -c.extraMetadata.main=build/electron.js
+```
