@@ -6,11 +6,11 @@ import Root from "./routes/Root";
 import Settings from "./routes/Settings";
 
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root/>,
